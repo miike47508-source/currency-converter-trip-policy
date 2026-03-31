@@ -1,97 +1,180 @@
 # currency-converter-trip-policy
 # Privacy Policy
 
-Privacy Policy
-App Name: Currency Converter Trip
-Package Name: com.mike.currencyconvertertrip
-Developer: mug
-Contact: miike47508@gmail.com
-Effective Date: March 31, 2026
 
-Currency Converter Trip (“the App”, “we”, “us”, or “our”) respects your privacy.
+**App Name:** Currency Converter Trip  
+**Package Name:** com.mike.currencyconvertertrip  
+**Developer:** mug  
+**Contact:** miike47508@gmail.com  
+**Effective Date:** March 31, 2026
+
+Currency Converter Trip (“the App”, “we”, “us”, or “our”) respects your privacy.  
 This Privacy Policy explains what information is processed when you use the App, why it is processed, and your choices.
 
-1) Information We Process
-A. Camera Access (android.permission.CAMERA)
-Purpose: Price/text scanning features.
-How used: The App captures images for on-device OCR processing.
-Important: We do not upload your camera images/videos to our own servers by default.
-B. Location Access (ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION)
-Purpose: Estimate your local/home currency based on country/location.
-How used: The App checks permission, gets device location, and uses geocoding to infer country/currency.
-Important: We do not sell location data.
-C. In-App Purchase Data (com.android.vending.BILLING)
-Purpose: Provide paid features (e.g., ad removal and premium features), and restore purchases.
-How used: The App queries product details and purchase status from Google Play Billing.
-Important: We do not collect or store your full payment card details. Payment processing is handled by Google Play.
-D. Advertising Data (Google Mobile Ads / AdMob)
-Purpose: Show banner/interstitial/rewarded ads in free flows.
-How used: Ad requests are sent through Google Mobile Ads SDK.
-Important: AdMob/Google may process device and ad-related data under their own policies.
-E. Overlay / Lock-Screen Related Capabilities
-Permissions/Capabilities: SYSTEM_ALERT_WINDOW, foreground service, boot completed receiver, wake lock.
-Purpose: Optional lock-screen quick-launch / auto-launch functions.
-How used: Only when related settings are enabled by the user.
-F. Network Access (INTERNET, ACCESS_NETWORK_STATE)
-Purpose: Fetch exchange rates, process geocoding/location-related requests, and support ad/in-app billing flows.
-How used: The App sends network requests to exchange-rate and third-party service endpoints.
-G. Local Device Storage
-The App stores data locally on your device (e.g., via SharedPreferences/local app storage), including:
+---
 
-app preferences (language/theme/currency settings),
-calculator and feature settings,
-travel expense records and related local state,
-premium/entitlement flags (e.g., ad removal status, premium unlock status),
-lock-screen feature settings.
-H. User-Initiated Sharing
-Purpose: Let you share selected app-generated text/content.
-How used: If you use share features, selected content is passed to apps/services you choose.
-2) Third-Party Services
-The App may use third-party services/SDKs, including:
+## 1. Information We Process
 
-Google Mobile Ads (AdMob) for ads,
-Google Play Billing for in-app purchases,
-Platform location/geocoding services for location-based currency inference,
-Exchange-rate API endpoint for currency rate data.
-These providers may process data under their own privacy policies.
-Google Privacy Policy: https://policies.google.com/privacy
+### A. Camera Access (`android.permission.CAMERA`)
 
-3) Data Sharing
-We do not sell your personal data.
+- **Purpose:** To enable camera-based price/text scanning features.
+- **How it is used:** The App uses the camera to capture images for on-device OCR (text recognition) in price scanning features.
+- **Important:** We do **not** upload your camera images or videos to our own servers by default.
 
-Data may be shared only in limited cases:
+### B. Location Access (`ACCESS_FINE_LOCATION`, `ACCESS_COARSE_LOCATION`)
 
-when required to operate third-party SDKs/services (ads, billing, location/geocoding, network APIs),
-when you explicitly trigger sharing features,
-when required by applicable law or valid legal process.
-4) Data Retention
-Locally stored app data remains on your device until you delete app data or uninstall the App.
-Purchase/transaction handling records are managed by Google Play under Google’s policies.
-We retain data only as needed for app functionality and legal obligations.
-5) Your Choices and Controls
-You can:
+- **Purpose:** To estimate your local/home currency based on your current country/location.
+- **How it is used:** The App checks location permission, obtains the device location, and uses geocoding to infer your country and a representative currency.
+- **Important:** We do not sell your location data.
 
-grant/revoke permissions (camera, location, overlay) in device settings,
-stop using optional features that require those permissions,
-use purchase restore for previously purchased eligible items,
-clear app data or uninstall the App to remove local data (subject to OS behavior).
-6) Children’s Privacy
-The App is not intended to knowingly collect personal data from children.
-If you believe a child has provided personal data, contact us and we will review and address the issue.
+### C. In-App Purchase Data (`com.android.vending.BILLING`)
 
-7) Security
-We apply reasonable technical and organizational measures to protect information processed by the App.
-However, no transmission or storage method is 100% secure.
+- **Purpose:** To provide paid features such as ad removal and premium functionality, and to restore purchases on other devices or after reinstall.
+- **How it is used:**  
+  - The App queries product details and purchase status from Google Play Billing.  
+  - Purchase information is used to determine whether to remove ads and/or unlock premium features.
+- **Important:**  
+  - Actual payment processing (e.g., credit/debit card data) is handled by **Google Play**, not by the App.  
+  - We do **not** collect or store your full payment card numbers.
 
-8) International Use
-Because the App is available globally and may use third-party infrastructure, data may be processed in countries other than your own, subject to applicable laws and provider safeguards.
+### D. Advertising Data (Google Mobile Ads / AdMob)
 
-9) Changes to This Policy
-We may update this Privacy Policy from time to time.
-If material changes are made, we will update the Effective Date and publish the revised policy.
+- **Purpose:** To show banner, interstitial, and rewarded ads in the free version of the App.
+- **How it is used:**  
+  - The App uses the Google Mobile Ads (AdMob) SDK to request and display ads.  
+  - Ad requests may include device and usage information required by the SDK.
+- **Important:**  
+  - AdMob/Google may process data under their own policies.  
+  - You can remove ads via an in-app purchase, after which banner and interstitial ads are disabled in the App.
 
-10) Contact
-If you have questions about this Privacy Policy, contact:
+### E. Overlay / Lock-Screen Related Capabilities
 
-mug
-Email: miike47508@gmail.com
+- **Permissions/Capabilities:** `SYSTEM_ALERT_WINDOW`, foreground services, boot completed receiver, wake lock, and related Android capabilities.
+- **Purpose:**  
+  - To provide optional lock-screen quick launch or auto-launch features (for example, launching calculators from the lock screen).
+- **How it is used:**  
+  - These capabilities are only active if you enable the related settings inside the App.
+  - The App may run a foreground service or react to device boot events to honor your chosen settings.
+
+### F. Network Access (`INTERNET`, `ACCESS_NETWORK_STATE`)
+
+- **Purpose:**  
+  - To fetch exchange rates, process geocoding/location requests, support ads and in-app billing flows, and access any required third-party endpoints.
+- **How it is used:**  
+  - The App makes HTTPS requests to exchange rate APIs and other endpoints to retrieve up-to-date data needed for its features.
+
+### G. Local Device Storage
+
+The App stores certain data locally on your device (for example, via SharedPreferences or similar storage), including but not limited to:
+
+- selected currencies and general app preferences (e.g., language, theme),
+- calculator/feature settings,
+- travel expense records and related configuration,
+- premium entitlements such as:
+  - ad removal status,
+  - premium/unlock flags (e.g., unlimited price scanner usage, lock screen launch),
+- lock-screen feature settings and local state needed for functionality.
+
+This data is stored locally on your device and is not automatically uploaded to our own servers.
+
+### H. User-Initiated Sharing
+
+- **Purpose:** To allow you to manually share text or other content generated by the App (for example, exporting travel expense summaries).
+- **How it is used:**  
+  - Only when you choose a share/export action, the selected content is passed to the apps/services you choose (e.g., email, messenger).  
+  - The App does not automatically share your content without your explicit action.
+
+---
+
+## 2. Third-Party Services
+
+The App may use third-party services/SDKs, including but not limited to:
+
+- **Google Mobile Ads (AdMob)** – for displaying ads.
+- **Google Play Billing** – for handling in-app purchases and subscription-like entitlements.
+- **Platform location/geocoding services** – to infer your country and currency from your device location.
+- **Exchange-rate API endpoints** – to fetch exchange-rate data needed for currency conversion and related features.
+
+These third parties may process data in accordance with their own privacy policies.  
+For Google services, see:  
+**Google Privacy Policy:** <https://policies.google.com/privacy>
+
+---
+
+## 3. Data Sharing
+
+We do **not** sell your personal data.
+
+Data may be shared only in limited circumstances, such as:
+
+- when necessary to operate third-party SDKs/services (e.g., ads, billing, location/geocoding, exchange-rate APIs),
+- when you explicitly trigger a share/export feature and choose a destination app/service,
+- when required to comply with applicable laws, regulations, or legal processes.
+
+---
+
+## 4. Data Retention
+
+- Local app data remains on your device until you clear app data or uninstall the App (subject to your device/OS behavior).
+- In-app purchase transaction information is primarily managed and retained by **Google Play** in line with Google’s policies.
+- We retain information only as long as necessary to provide the App’s functionality and to comply with legal obligations.
+
+---
+
+## 5. Your Choices and Rights
+
+You have various controls over how the App processes information:
+
+- **Permissions:** You may grant or revoke permissions (camera, location, overlay, etc.) at any time through your device settings.
+- **Optional Features:** You can stop using optional features that require certain permissions.
+- **In-App Purchases:**  
+  - You may purchase or choose not to purchase ad removal and premium options.  
+  - You may restore previously purchased eligible items using the restore functionality.
+- **App Data and Uninstall:**  
+  - You can clear the App’s local data through OS settings.  
+  - You can uninstall the App to remove locally stored app data from your device (subject to OS behavior).
+
+Depending on your region, you may have additional rights under local data protection laws.  
+You can contact us if you have questions about these rights.
+
+---
+
+## 6. Children’s Privacy
+
+The App is not intended to knowingly collect personal data from children.  
+If you believe that a child has provided personal data through the App, please contact us and we will review and address the issue, including deleting data where appropriate.
+
+---
+
+## 7. Security
+
+We take reasonable technical and organizational measures to protect information processed by the App.  
+However, no method of transmission or storage is completely secure, and we cannot guarantee absolute security.
+
+---
+
+## 8. International Use
+
+Because the App is available globally and may rely on third-party infrastructure, information may be processed in countries other than your own.  
+Such processing is subject to applicable laws and the safeguards provided by those third-party service providers.
+
+---
+
+## 9. Changes to This Policy
+
+We may update this Privacy Policy from time to time.  
+If we make material changes, we will:
+
+- update the **Effective Date** at the top of this document, and  
+- publish the revised policy.
+
+Your continued use of the App after changes are made will signify your acceptance of the updated policy.
+
+---
+
+## 10. Contact
+
+If you have questions about this Privacy Policy, please contact:
+
+**mug**  
+**Email:** miike47508@gmail.com
