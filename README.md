@@ -1,7 +1,7 @@
 # currency-converter-trip-policy
 # Privacy Policy
 
-Privacy Policy (Updated Draft)
+Privacy Policy
 App Name: Currency Converter Trip
 Package Name: com.mike.currencyconvertertrip
 Developer: mug
